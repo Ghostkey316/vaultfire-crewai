@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaultfire-crewai"
+version = "1.0.0"
+description = "CrewAI integration for Vaultfire Protocol — on-chain trust, Street Cred scoring, and partnership bonds for AI agents"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Ghostkey316", email = "ghostkey316@proton.me"}]
+requires-python = ">=3.10"
+dependencies = [
+    "crewai>=0.80.0",
+    "web3>=6.0.0",
+]
+keywords = ["vaultfire", "crewai", "ai-agents", "trust", "erc-8004", "bonds", "multi-chain"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ghostkey316/vaultfire-crewai"
+Repository = "https://github.com/Ghostkey316/vaultfire-crewai"
+Issues = "https://github.com/Ghostkey316/vaultfire-crewai/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vaultfire_crewai*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
