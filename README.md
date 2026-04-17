@@ -227,8 +227,8 @@ Street Cred is a composite on-chain trust score (0–95) calculated from:
 | Contract | Address |
 |----------|---------|
 | Identity | `0x35978DB675576598F0781dA2133E94cdCf4858bC` |
-| Partnership | `0xC574CF2a09B0B470933f0c6a3ef422e3fb25b4b4` |
-| Accountability | `0xf92baef9523BC264144F80F9c31D5c5C017c6Da8` |
+| Partnership | `0x01C479F0c039fEC40c0Cf1c5C921bab457d57441` |
+| Accountability | `0x6750D28865434344e04e1D0a6044394b726C3dfE` |
 | Reputation | `0xdB54B8925664816187646174bdBb6Ac658A55a5F` |
 | Bridge | `0x94F54c849692Cc64C35468D0A87D2Ab9D7Cb6Fb2` |
 
@@ -237,8 +237,8 @@ Street Cred is a composite on-chain trust score (0–95) calculated from:
 | Contract | Address |
 |----------|---------|
 | Identity | `0x57741F4116925341d8f7Eb3F381d98e07C73B4a3` |
-| Partnership | `0xea6B504827a746d781f867441364C7A732AA4b07` |
-| Accountability | `0xaeFEa985E0C52f92F73606657B9dA60db2798af3` |
+| Partnership | `0xDC8447c66fE9D9c7D54607A98346A15324b7985D` |
+| Accountability | `0x376831fB2457E34559891c32bEb61c442053C066` |
 | Reputation | `0x11C267C8A75B13A4D95357CEF6027c42F8e7bA24` |
 | Bridge | `0x0dF0523aF5aF2Aef180dB052b669Bea97fee3d31` |
 
@@ -247,8 +247,8 @@ Street Cred is a composite on-chain trust score (0–95) calculated from:
 | Contract | Address |
 |----------|---------|
 | Identity | `0x6298c62FDA57276DC60de9E716fbBAc23d06D5F1` |
-| Partnership | `0x0E777878C5b5248E1b52b09Ab5cdEb2eD6e7Da58` |
-| Accountability | `0xfDdd2B1597c87577543176AB7f49D587876563D2` |
+| Partnership | `0xdB54B8925664816187646174bdBb6Ac658A55a5F` |
+| Accountability | `0xef3A944f4d7bb376699C83A29d7Cb42C90D9B6F0` |
 | Reputation | `0x8aceF0Bc7e07B2dE35E9069663953f41B5422218` |
 | Bridge | `0xe2aDfe84703dd6B5e421c306861Af18F962fDA91` |
 
