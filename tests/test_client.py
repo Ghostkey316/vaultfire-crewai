@@ -271,7 +271,7 @@ class TestVerifyTrustMocked(unittest.TestCase):
         # Patch individual methods
         client.get_agent = MagicMock(
             return_value={
-                "address": "0xA054f831B562e729F8D268291EBde1B2EDcFb84F",
+                "address": "0xfA15Ee28939B222B0448261A22156070f0A7813C",
                 "agentURI": "ipfs://Qmtest" if is_registered else "",
                 "active": is_registered,
                 "agentType": "researcher",
@@ -281,7 +281,7 @@ class TestVerifyTrustMocked(unittest.TestCase):
         client.get_bonds_by_participant = MagicMock(return_value=bonds)
         client.get_reputation = MagicMock(
             return_value={
-                "address": "0xA054f831B562e729F8D268291EBde1B2EDcFb84F",
+                "address": "0xfA15Ee28939B222B0448261A22156070f0A7813C",
                 "averageRating": 90,
                 "totalFeedbacks": 5,
                 "verifiedFeedbacks": 3,
@@ -295,7 +295,7 @@ class TestVerifyTrustMocked(unittest.TestCase):
         bonds = [{"active": True, "stakeAmount": GOLD_THRESHOLD}]
         client = self._make_client_with_mocks(bonds=bonds)
         result = client.verify_trust(
-            "0xA054f831B562e729F8D268291EBde1B2EDcFb84F", min_score=20
+            "0xfA15Ee28939B222B0448261A22156070f0A7813C", min_score=20
         )
         self.assertIn("verdict", result)
         self.assertEqual(result["verdict"], "TRUSTED")
@@ -306,14 +306,14 @@ class TestVerifyTrustMocked(unittest.TestCase):
     def test_untrusted_verdict_when_below_min_score(self):
         client = self._make_client_with_mocks(is_registered=False, bonds=[])
         result = client.verify_trust(
-            "0xA054f831B562e729F8D268291EBde1B2EDcFb84F", min_score=50
+            "0xfA15Ee28939B222B0448261A22156070f0A7813C", min_score=50
         )
         self.assertEqual(result["verdict"], "UNTRUSTED")
         self.assertFalse(result["trusted"])
 
     def test_result_contains_required_keys(self):
         client = self._make_client_with_mocks()
-        result = client.verify_trust("0xA054f831B562e729F8D268291EBde1B2EDcFb84F")
+        result = client.verify_trust("0xfA15Ee28939B222B0448261A22156070f0A7813C")
         for key in (
             "address", "chain", "chain_id", "verdict", "trusted",
             "min_score_required", "street_cred", "identity", "bonds",
