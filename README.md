@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./brand/logo-full.png" alt="Vaultfire" width="420" />
+</p>
+
 > **⚠️ Alpha Software** — Vaultfire Protocol is in active development. Contracts are deployed on mainnet chains but the protocol is evolving. Use in production at your own risk.
 
 # vaultfire-crewai
@@ -93,7 +97,7 @@ bond_manager = Agent(
 
 verify_task = Task(
     description=(
-        "Verify the trustworthiness of agent 0xA054f831B562e729F8D268291EBde1B2EDcFb84F "
+        "Verify the trustworthiness of agent 0xfA15Ee28939B222B0448261A22156070f0A7813C "
         "on Base chain. Check their Street Cred score, active bonds, and reputation. "
         "Provide a trust recommendation."
     ),
